@@ -1,140 +1,152 @@
 function isOlder(name, age) {
   if (age >= 18) {
-    console.log("Hola " + name + ", eres mayor de edad");
+    return "Hola " + name + ", eres mayor de edad";
   } else {
-    console.log("Hola " + name + ", eres menor de edad");
+    return "Hola " + name + ", eres menor de edad";
   }
 }
 
-isOlder("Diego", 26);
+const js1 = isOlder("Diego", 26);
+console.log(js1);
 
 function higherNumber(num1, num2) {
   if (num1 > num2) {
-    console.log(num1);
+    return num1;
   } else {
-    console.log(num2);
+    return num2;
   }
 }
 
-higherNumber(10, 20);
+const js2 = higherNumber(10, 20);
+console.log(js2);
 
 function signOfNumber(num) {
   if (num > 0) {
-    console.log("Numero positivo");
+    return "Numero positivo";
   } else if (num < 0) {
-    console.log("Numero negativo");
+    return "Numero negativo";
   } else {
-    console.log("Es cero");
+    return "Es cero";
   }
 }
 
-signOfNumber(10);
+const js3 = signOfNumber(10);
+console.log(js3);
 
 function gradesCalification(gradeA, gradeB, gradeC) {
   const av = (gradeA + gradeB + gradeC) / 3;
-  console.log("Media es: " + av);
   if (av < 5) {
-    console.log("suspenso");
+    return "suspenso";
   }
   if (av >= 5 && av < 8) {
-    console.log("Aprobado");
+    return "Aprobado";
   }
   if (av >= 8) {
-    console.log("Matrícula de honor");
+    return "Matrícula de honor";
   }
 }
-gradesCalification(6, 8, 10);
+
+const js4 = gradesCalification(6, 2, 10);
+console.log(js4);
 
 function bestOfThree(num1, num2, num3) {
   if (num1 > num2 && num1 > num3) {
-    console.log("Mayor: " + num1);
+    return "Mayor: " + num1;
   } else if (num2 > num1 && num2 > num3) {
-    console.log("Mayor: " + num2);
+    return "Mayor: " + num2;
   } else {
-    console.log("Mayor: " + num3);
+    return "Mayor: " + num3;
   }
 }
 
-bestOfThree(10, 121, 1);
+const js5 = bestOfThree(10, 121, 1);
+console.log(js5);
 
 function divisibleNumber(num) {
   if (num % 3 == 0 && num % 5 == 0) {
-    console.log("Es divisible por 3 y por 5");
+    return "Es divisible por 3 y por 5";
   } else if (num % 3 == 0) {
-    console.log("Es divisible por 3");
+    return "Es divisible por 3";
   } else if (num % 5 == 0) {
-    console.log("Es divisible por 5");
+    return "Es divisible por 5";
   } else {
-    console.log(num + " No es divisible ni por 3 ni por 5");
+    return num + " No es divisible ni por 3 ni por 5";
   }
 }
 
-divisibleNumber(15);
+const js6 = divisibleNumber(15);
+console.log(js6);
 
 function oddOrEven(num) {
   if (num % 2 === 0) {
-    console.log("Es un numero par");
+    return "Es un numero par";
   } else {
-    console.log("Es un numero impar");
+    return "Es un numero impar";
   }
 }
 
-oddOrEven(9);
+const js7 = oddOrEven(9);
+console.log(js7);
 
 function leapYear(year) {
   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    console.log("Es un año bisiesto");
+    return "Es un año bisiesto";
   } else {
-    console.log("No es un año bisiesto");
+    return "No es un año bisiesto";
   }
 }
 
-leapYear(1992);
+const js8 = leapYear(1992);
+console.log(js8);
 
 function threeDigits(num) {
   if (num > 99 && num < 1000) {
-    console.log("Tiene 3 digitos");
+    return "Tiene 3 digitos";
   } else {
-    console.log("No tiene 3 digitos");
+    return "No tiene 3 digitos";
   }
 }
 
-threeDigits(321);
+const js9 = threeDigits(321);
+console.log(js9);
 
 function numberDivisible(num1, num2) {
   if (num2 % num1 === 0) {
-    console.log("El numero " + num1 + " es multiplo por " + num2);
+    return "El numero " + num1 + " es multiplo por " + num2;
   } else {
-    console.log("El numero " + num1 + " NO es multiplo por " + num2);
+    return "El numero " + num1 + " NO es multiplo por " + num2;
   }
 }
 
-numberDivisible(2, 6);
+const js10 = numberDivisible(2, 6);
+console.log(js10);
 
 function doubleNumber(num1, num2) {
   if (num2 === num1 * 2) {
-    console.log("El numero es el doble");
+    return "El numero es el doble";
   } else {
-    console.log("El numero NO es el doble");
+    return "El numero NO es el doble";
   }
 }
 
-doubleNumber(3, 6);
+const js11 = doubleNumber(3, 6);
+console.log(js11);
 
 function sortNumber(num1, num2, num3) {
   if (num1 > num2 && num2 > num3) {
-    console.log(num1, num2, num3);
+    return num1 + " " + num2 + " " + num3;
   } else if (num1 > num3 && num3 > num2) {
-    console.log(num1, num3, num2);
+    return num1 + " " + num3 + " " + num2;
   } else if (num2 > num1 && num1 > num3) {
-    console.log(num2, num1, num3);
+    return num2 + " " + num1 + " " + num3;
   } else if (num2 > num3 && num3 > num1) {
-    console.log(num2, num3, num1);
+    return num2 + " " + num3 + " " + num1;
   } else if (num3 > num1 && num1 > num2) {
-    console.log(num3, num1, num2);
+    return num3 + " " + num1 + " " + num2;
   } else {
-    console.log(num3, num2, num1);
+    return num3 + " " + num2 + " " + num1;
   }
 }
 
-sortNumber(15, 540, 112);
+const js12 = sortNumber(15, 540, 112);
+console.log(js12);
