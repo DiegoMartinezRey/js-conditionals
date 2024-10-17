@@ -138,5 +138,3 @@ function sortNumber(num1, num2, num3) {
 }
 
 sortNumber(15, 540, 112);
-
-function solveEquation() {}
