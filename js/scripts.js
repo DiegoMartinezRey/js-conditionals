@@ -31,15 +31,15 @@ function signOfNumber(num) {
 signOfNumber(10);
 
 function gradesCalification(gradeA, gradeB, gradeC) {
-  const media = (gradeA + gradeB + gradeC) / 3;
-  console.log("Media es: " + media);
-  if (media < 5) {
+  const av = (gradeA + gradeB + gradeC) / 3;
+  console.log("Media es: " + av);
+  if (av < 5) {
     console.log("suspenso");
   }
-  if (media >= 5 && media < 8) {
+  if (av >= 5 && av < 8) {
     console.log("Aprobado");
   }
-  if (media >= 8) {
+  if (av >= 8) {
     console.log("Matrícula de honor");
   }
 }
@@ -90,3 +90,53 @@ function leapYear(year) {
 }
 
 leapYear(1992);
+
+function threeDigits(num) {
+  if (num > 99 && num < 1000) {
+    console.log("Tiene 3 digitos");
+  } else {
+    console.log("No tiene 3 digitos");
+  }
+}
+
+threeDigits(321);
+
+function numberDivisible(num1, num2) {
+  if (num2 % num1 === 0) {
+    console.log("El numero " + num1 + " es multiplo por " + num2);
+  } else {
+    console.log("El numero " + num1 + " NO es multiplo por " + num2);
+  }
+}
+
+numberDivisible(2, 6);
+
+function doubleNumber(num1, num2) {
+  if (num2 === num1 * 2) {
+    console.log("El numero es el doble");
+  } else {
+    console.log("El numero NO es el doble");
+  }
+}
+
+doubleNumber(3, 6);
+
+function sortNumber(num1, num2, num3) {
+  if (num1 > num2 && num2 > num3) {
+    console.log(num1, num2, num3);
+  } else if (num1 > num3 && num3 > num2) {
+    console.log(num1, num3, num2);
+  } else if (num2 > num1 && num1 > num3) {
+    console.log(num2, num1, num3);
+  } else if (num2 > num3 && num3 > num1) {
+    console.log(num2, num3, num1);
+  } else if (num3 > num1 && num1 > num2) {
+    console.log(num3, num1, num2);
+  } else {
+    console.log(num3, num2, num1);
+  }
+}
+
+sortNumber(15, 540, 112);
+
+function solveEquation() {}
